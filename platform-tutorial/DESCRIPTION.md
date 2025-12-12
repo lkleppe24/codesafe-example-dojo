@@ -1,1 +1,0 @@
-Start here! This will be a tutorial on how to use this platform and start working on the challenges.
