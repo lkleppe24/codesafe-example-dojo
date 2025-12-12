@@ -3,10 +3,10 @@ name: Group 16s Dojo
 type: example
 image: pwncollege/challenge-legacy:latest
 modules:
-  - id: platform-tutorial
-    name: Platform Tutorial
+  - id: hw6-challenge
+    name: Homework 6 Challenge
     description: >
-      Start here! This will be a tutorial on how to use this platform and start working on the chlalenges. We highly recommend completing the tutorial challenges in order.
+      This is the challenge that Group 16 made for Homework 6!
     challenges:
       - id: start-here
         name: Start Here
