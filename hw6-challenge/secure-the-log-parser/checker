@@ -15,7 +15,7 @@ class TestLogParser(unittest.TestCase):
             "2024-03-05 12:02:17 | WARN | Disk almost full"
         ]
         parser.extract_events(lines)
-        self.assertEquals(len(parser.events), 2)
+        self.assertEqual(len(parser.events), 2)
 
     def test_rejected_malicious(self):
         parser = modify_me.LogParser()
@@ -24,8 +24,8 @@ class TestLogParser(unittest.TestCase):
             "2024-03-05 12:02:17 | WARN | Safe message"
         ]
         parser.extract_events(lines)
-        self.assertEquals(len(parser.rejected), 1)
-        self.assertEquals(len(parser.events), 1)
+        self.assertEqual(len(parser.rejected), 1)
+        self.assertEqual(len(parser.events), 1)
 
     def test_strict_malicious_detection(self):
         parser = modify_me.LogParser()
@@ -37,7 +37,7 @@ class TestLogParser(unittest.TestCase):
         parser.extract_events(lines)
 
         # all three should be rejected by hardened detection
-        self.assertEquals(len(parser.rejected), 3)
+        self.assertEqual(len(parser.rejected), 3)
 
     def test_no_shell_execution(self):
         parser = modify_me.LogParser()
@@ -47,7 +47,7 @@ class TestLogParser(unittest.TestCase):
 
         output = parser.run_external_tool("User logged in")
         # output should NOT contain newlines or shell output side effects
-        self.assertEquals(output, "User logged in")
+        self.assertEqual(output, "User logged in")
 
     def test_summary(self):
         parser = modify_me.LogParser()
@@ -56,8 +56,8 @@ class TestLogParser(unittest.TestCase):
             "2024-03-05 12:01:15 | INFO | Bad; echo hacking"
         ])
         summary = json.loads(parser.summary())
-        self.assertEquals(summary["accepted"], 1)
-        self.assertEquals(summary["rejected"], 1)
+        self.assertEqual(summary["accepted"], 1)
+        self.assertEqual(summary["rejected"], 1)
 
 def run_tests(test_case):
     case = unittest.TestLoader().loadTestsFromTestCase(test_case)
