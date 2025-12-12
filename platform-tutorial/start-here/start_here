@@ -1,7 +1,0 @@
-#!/opt/pwn.college/python
-
-print("Congratulations on completing the first tutorial challenge for Codesafe!")
-print("Printing your flag below...")
-
-with open("/flag") as f:
-    print(f.read())

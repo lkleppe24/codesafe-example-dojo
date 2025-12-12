@@ -23,3 +23,10 @@ All events are parsed correctly.
 Log fields containing suspicious characters (;, |, &, $, backticks, etc.) are rejected and logged safely.
 
 All provided test cases pass.
+
+To complete this challenge, simply modify `LogParser` in `modify_me.py` to perform as specified above. After doing that, open up a terminal in the VSCode workspace and run the following commands:
+
+```
+$ cd /challenge
+$ ./checker
+```
