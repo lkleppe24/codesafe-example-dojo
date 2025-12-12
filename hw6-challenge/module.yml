@@ -1,0 +1,4 @@
+name: Homework 6 Challenge
+challenges:
+  - id: secure-the-log-parser
+    name: Secure the Log Parser

@@ -1,0 +1,7 @@
+#!/bin/bash
+# Checker script is READABLE to the users.
+
+chmod 777 /challenge/modify_me.py
+chmod 4755 /challenge/checker
+
+rm /challenge/.init
