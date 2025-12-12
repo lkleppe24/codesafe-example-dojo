@@ -8,13 +8,13 @@ modules:
     description: >
       This is the challenge that Group 16 made for Homework 6!
     challenges:
-      - id: start-here
-        name: Start Here
-      - id: format-of-challenges
-        name: Format of Challenges
-      - id: saving-files
-        name: Saving Files in the Environment
+      # - id: start-here
+      #   name: Start Here
+      # - id: format-of-challenges
+      #   name: Format of Challenges
+      # - id: saving-files
+      #   name: Saving Files in the Environment
   
-  - id: hello
-  - id: world
-  - id: demo
+  # - id: hello
+  # - id: world
+  # - id: demo
